@@ -1,0 +1,103 @@
+@use '../core/' as *;
+.faq {
+    background-image: linear-gradient($violet-gradient-300, $blue-gradient-300);
+    // Start SVG Art
+    .image-container {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 70px;
+        transform: translateY(-60%);
+        @media (min-width: 750px) {
+            flex: 1;
+            flex-direction: column;
+        }
+    }
+    .women {
+        width: 237px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(-36%);
+        @media (min-width: 750px) {
+            display: none;
+        }
+    }
+    .box {
+        position: absolute;
+        top: 401%;
+        left: -37%;
+        @media (max-width: 749px) {
+            display: none;
+        }
+        
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%) rotate(180deg);
+    }
+    // End SVG Art
+    // Start Questions Section
+    .questions-section {
+        flex: 1;
+        padding: {
+            left: 15px;
+            right: 15px;
+            top: 60px;
+        }
+        
+        > h1 {
+            color: $blue-text-900;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 1em;
+            @media (min-width: 750px) {
+                text-align: left;
+            }
+        }  
+        li {
+            border-bottom: 1px solid $divider-color;
+        }
+        h2 {
+            // To Position The Arrow
+            position: relative;
+            color: $blue-text-900;
+            padding-right: 30px;
+            transition: color 0.5s;
+            cursor: pointer;
+            &:not(.active):hover {
+                color: $red-text-300;
+            }
+        }
+        p {
+            color: $gray-blue-500;
+            line-height: 1.6;
+            transition: 0.5s;
+            // Accordion Animation
+            max-height: 0px;
+            overflow: hidden;
+        }
+        .active {
+            font-weight: 700;
+            .arrow {
+                transform: translate(0, -50%) rotate(0deg);
+            }
+            &+p {
+                max-height: 100px;
+            }
+        }
+        @media (min-width: 750px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: {
+                top: 0;
+            }
+        }
+    }
+    // End Questions Section
+}

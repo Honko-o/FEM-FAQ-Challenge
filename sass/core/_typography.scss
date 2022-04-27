@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+body {
+    font-size: $root-font-size;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+// - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+// - Weights: 400, 700

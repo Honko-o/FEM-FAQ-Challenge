@@ -1,0 +1,75 @@
+@use '../core/' as *;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    top: 80px;
+    bottom: 80px;
+    left: 15px;
+    right: 15px;
+  }
+  @media (min-width: 749px) {
+      padding: {
+        top: 0;
+        bottom: 0;
+      }
+  }
+}
+.wrapper {
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  @media (max-width: 749px) {
+    background-image: url(../../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  @media (min-width: 750px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    padding: {
+      top: 0;
+      bottom: 0;
+    }
+    min-height: 550px;
+    width: 750px;
+    background-image: url("../../images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -30% center;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
