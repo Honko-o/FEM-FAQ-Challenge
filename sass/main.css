@@ -538,6 +538,7 @@ h2 {
   }
 }
 .faq .questions-section li {
+  list-style: none;
   border-bottom: 1px solid #e7e7e9;
 }
 .faq .questions-section h2 {
