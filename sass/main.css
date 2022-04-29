@@ -430,7 +430,7 @@ h2 {
 }
 @media (max-width: 749px) {
   .wrapper {
-    background-image: url("../../images/bg-pattern-mobile.svg");
+    background-image: url("../images/bg-pattern-mobile.svg");
     background-repeat: no-repeat;
     background-position: top center;
   }
@@ -444,7 +444,7 @@ h2 {
     padding-bottom: 0;
     min-height: 550px;
     width: 750px;
-    background-image: url("../../images/illustration-woman-online-desktop.svg");
+    background-image: url("../images/illustration-woman-online-desktop.svg");
     background-repeat: no-repeat;
     background-position: -30% center;
   }

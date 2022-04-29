@@ -28,7 +28,7 @@
   padding-bottom: 30px;
   border-radius: 20px;
   @media (max-width: 749px) {
-    background-image: url(../../images/bg-pattern-mobile.svg);
+    background-image: url("../images/bg-pattern-mobile.svg");
     background-repeat: no-repeat;
     background-position: top center;
   }
@@ -42,7 +42,7 @@
     }
     min-height: 550px;
     width: 750px;
-    background-image: url("../../images/illustration-woman-online-desktop.svg");
+    background-image: url("../images/illustration-woman-online-desktop.svg");
     background-repeat: no-repeat;
     background-position: -30% center;
   }
